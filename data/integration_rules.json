@@ -1,0 +1,19 @@
+{
+  "host_client_rules": {
+    "DEVICE": ["APP", "DATA", "MEDIA", "AI"],
+    "IOT": ["APP", "DATA", "MEDIA", "AI"],
+    "ROBOTICS": ["APP", "DATA", "MEDIA", "AI"],
+    "PLATFORM": ["SERVICE", "FINTECH_TAG", "CRYPTO", "MEDIA"],
+    "CLOUD": ["SERVICE", "FINTECH_TAG", "CRYPTO", "MEDIA"],
+    "NETWORK": ["SERVICE", "FINTECH_TAG", "CRYPTO", "MEDIA"]
+  },
+  "unicorn_hosts": {
+    "the_metaverse": ["SOCIAL", "MEDIA", "COMMERCE"],
+    "fusion_reactor": ["BIO", "ENERGY", "IOT"]
+  },
+  "restrictions": {
+    "max_clients_per_host": 1,
+    "no_daisy_chain": true,
+    "no_same_tag_stack": true
+  }
+}

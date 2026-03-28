@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "startup-simulator"
+version = "0.1.0"
+description = "Startup Simulator board game engine for RL training"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+rl = [
+    "pettingzoo>=1.24",
+    "gymnasium>=0.29",
+    "sb3-contrib>=2.0",
+    "ray[rllib]>=2.7",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["startup_simulator*", "env*", "agents*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

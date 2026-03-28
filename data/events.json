@@ -1,0 +1,130 @@
+{
+  "events": [
+    {
+      "id": "venture_capital_rain",
+      "name": "Venture Capital Rain",
+      "category": "economic",
+      "effect_id": "equity_bonus_3",
+      "description": "Equity Sales grant +$3 extra cash this round."
+    },
+    {
+      "id": "tech_bubble",
+      "name": "Tech Bubble",
+      "category": "economic",
+      "effect_id": "revenue_plus_1",
+      "description": "All Active Maintenance Products generate +$1 Revenue this round."
+    },
+    {
+      "id": "patent_trolls",
+      "name": "Patent Trolls",
+      "category": "economic",
+      "effect_id": "license_fee_5",
+      "description": "Licensing Fee increased to $5 (from $3) this round."
+    },
+    {
+      "id": "angel_investors",
+      "name": "Angel Investors",
+      "category": "economic",
+      "effect_id": "tier1_only_bonus_3",
+      "description": "Players with Tier 1 Products only (no Tier 2/3) gain $3 immediately."
+    },
+    {
+      "id": "legacy_code",
+      "name": "Legacy Code",
+      "category": "economic",
+      "effect_id": "decay_2_per_bug",
+      "description": "Revenue Decay increased to -$2 per Bug (instead of -$1) this round."
+    },
+    {
+      "id": "regulation_audit",
+      "name": "Regulation Audit",
+      "category": "economic",
+      "effect_id": "payroll_tax",
+      "description": "Pay $1 for every Employee on Board with Salary > $0. Discard unpaid."
+    },
+    {
+      "id": "open_source_boom",
+      "name": "Open Source Boom",
+      "category": "production",
+      "effect_id": "software_output_plus_1",
+      "description": "All Software output is +1 this round."
+    },
+    {
+      "id": "hardware_hackathon",
+      "name": "Hardware Hackathon",
+      "category": "production",
+      "effect_id": "hardware_output_plus_1",
+      "description": "All Hardware output is +1 this round."
+    },
+    {
+      "id": "chip_shortage",
+      "name": "Chip Shortage",
+      "category": "production",
+      "effect_id": "hardware_hiring_plus_3",
+      "description": "Hardware hiring costs +$3 this round."
+    },
+    {
+      "id": "crunch_time",
+      "name": "Crunch Time",
+      "category": "production",
+      "effect_id": "crunch_time",
+      "description": "All Dev Teams produce +1 Cube but MUST add 1 Bug Token."
+    },
+    {
+      "id": "server_crash",
+      "name": "Server Crash",
+      "category": "production",
+      "effect_id": "software_ops_minus_1",
+      "description": "All Software Staff in Ops produce -1 Bandwidth this round."
+    },
+    {
+      "id": "supply_chain_logjam",
+      "name": "Supply Chain Logjam",
+      "category": "production",
+      "effect_id": "hardware_output_minus_1",
+      "description": "All Hardware output is -1 this round (Dev and Ops)."
+    },
+    {
+      "id": "recruiter_frenzy",
+      "name": "Recruiter Frenzy",
+      "category": "hr",
+      "effect_id": "poach_cost_1x",
+      "description": "Poaching costs 1x Base Cost (instead of 2x) this round."
+    },
+    {
+      "id": "intern_season",
+      "name": "Intern Season",
+      "category": "hr",
+      "effect_id": "university_free",
+      "description": "Recruiting from University costs $0 this round."
+    },
+    {
+      "id": "headhunter_holiday",
+      "name": "Headhunter Holiday",
+      "category": "hr",
+      "effect_id": "poaching_suspended",
+      "description": "Hostile Offers (Poaching) are Suspended this round."
+    },
+    {
+      "id": "online_course_boom",
+      "name": "Online Course Boom",
+      "category": "hr",
+      "effect_id": "training_cost_1",
+      "description": "Training action costs $1 (instead of $3) this round."
+    },
+    {
+      "id": "whistleblower_protection",
+      "name": "Whistleblower Protection Act",
+      "category": "conflict",
+      "effect_id": "audit_reward_doubled",
+      "description": "Bank Reward for successful Audit (Settlement) doubled to $8."
+    },
+    {
+      "id": "trade_show",
+      "name": "Trade Show",
+      "category": "conflict",
+      "effect_id": "pr_half_price",
+      "description": "PR Campaigns cost $2 (Half Price) this round."
+    }
+  ]
+}

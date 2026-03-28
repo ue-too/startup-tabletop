@@ -1,0 +1,166 @@
+{
+  "cards": [
+    {
+      "id": "full_stack_bootcamp",
+      "name": "Full Stack Bootcamp",
+      "category": "training",
+      "cost": 3,
+      "effect_id": "train_software_skill",
+      "count": 2,
+      "description": "Add Blue Skill Token (Software) to a Junior."
+    },
+    {
+      "id": "qa_certification",
+      "name": "QA Certification",
+      "category": "training",
+      "cost": 3,
+      "effect_id": "train_qa_skill",
+      "count": 2,
+      "description": "Add Green Skill Token (QA) to a Junior."
+    },
+    {
+      "id": "sales_seminar",
+      "name": "Sales Seminar",
+      "category": "training",
+      "cost": 2,
+      "effect_id": "train_specialist_xp",
+      "count": 2,
+      "description": "Add 1 XP Token to a Specialist (QA or Sales)."
+    },
+    {
+      "id": "leadership_masterclass",
+      "name": "Leadership Masterclass",
+      "category": "training",
+      "cost": 3,
+      "effect_id": "add_rank_badge",
+      "count": 1,
+      "description": "Add Gold Rank Badge to a Junior Developer (becomes Tier 2 Lead)."
+    },
+    {
+      "id": "agile_workshop",
+      "name": "Agile Workshop",
+      "category": "training",
+      "cost": 3,
+      "effect_id": "add_pm_rank_badge",
+      "count": 1,
+      "description": "Add Gold Rank Badge to a PM (becomes Agile/Senior PM)."
+    },
+    {
+      "id": "headhunter",
+      "name": "Headhunter",
+      "category": "warfare",
+      "cost": 0,
+      "effect_id": "poach_2x",
+      "count": 4,
+      "description": "Poach target for 2x Cost."
+    },
+    {
+      "id": "corporate_raider",
+      "name": "Corporate Raider",
+      "category": "warfare",
+      "cost": 2,
+      "effect_id": "poach_1_5x_bypass_hr",
+      "count": 2,
+      "description": "Poach target for 1.5x Cost AND bypass HR Manager."
+    },
+    {
+      "id": "hit_piece",
+      "name": "Hit Piece",
+      "category": "warfare",
+      "cost": 3,
+      "effect_id": "add_scandal",
+      "count": 2,
+      "description": "Add Scandal Token to target opponent's Maintenance product."
+    },
+    {
+      "id": "non_compete_suit",
+      "name": "Non-Compete Suit",
+      "category": "warfare",
+      "cost": 4,
+      "effect_id": "hostile_buyout",
+      "count": 2,
+      "description": "Hostile Buyout. Pay Investor $5 to force return of your Equity."
+    },
+    {
+      "id": "workaholic",
+      "name": "Workaholic",
+      "category": "attribute",
+      "cost": 2,
+      "effect_id": "attr_workaholic",
+      "count": 1,
+      "description": "Buff Own: +2 Output, +$2 Salary. Attach to your talent."
+    },
+    {
+      "id": "clean_coder",
+      "name": "Clean Coder",
+      "category": "attribute",
+      "cost": 3,
+      "effect_id": "attr_clean_coder",
+      "count": 1,
+      "description": "Buff Own: This unit never generates Bugs. Attach to your talent."
+    },
+    {
+      "id": "visionary",
+      "name": "Visionary",
+      "category": "attribute",
+      "cost": 3,
+      "effect_id": "attr_visionary",
+      "count": 1,
+      "description": "Buff Own: Counts as Lead for any Tier. Attach to your talent."
+    },
+    {
+      "id": "toxic_personality",
+      "name": "Toxic Personality",
+      "category": "attribute",
+      "cost": 3,
+      "effect_id": "attr_toxic",
+      "count": 1,
+      "description": "Debuff Enemy: -1 Team Output. Attach to opponent's talent."
+    },
+    {
+      "id": "burnout",
+      "name": "Burnout",
+      "category": "attribute",
+      "cost": 0,
+      "effect_id": "attr_burnout",
+      "count": 1,
+      "description": "Debuff Enemy: 0 Output. Attach to opponent's talent."
+    },
+    {
+      "id": "flight_risk",
+      "name": "Flight Risk",
+      "category": "attribute",
+      "cost": 2,
+      "effect_id": "attr_flight_risk",
+      "count": 1,
+      "description": "Debuff Enemy: Poach Cost is 1x Base. Attach to opponent's talent."
+    },
+    {
+      "id": "techcrunch_feature",
+      "name": "TechCrunch Feature",
+      "category": "utility",
+      "cost": 5,
+      "effect_id": "add_hype",
+      "count": 2,
+      "description": "Add Hype Token to your Maintenance product."
+    },
+    {
+      "id": "design_sprint",
+      "name": "Design Sprint",
+      "category": "utility",
+      "cost": 0,
+      "effect_id": "draw_5_products",
+      "count": 2,
+      "description": "Draw 5 Product cards, keep 1, discard rest to Open Idea Pool."
+    },
+    {
+      "id": "cease_and_desist",
+      "name": "Cease & Desist",
+      "category": "utility",
+      "cost": 0,
+      "effect_id": "cancel_attack",
+      "count": 2,
+      "description": "Reaction: Cancel an opponent's Warfare card played against you."
+    }
+  ]
+}
