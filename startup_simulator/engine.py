@@ -57,6 +57,9 @@ from .phases.engine_phase import (
 )
 from .phases.scoring import calculate_final_scores
 
+# Maximum number of turns before forced game end
+MAX_TURNS = 30
+
 
 @dataclass
 class StepResult:
@@ -553,8 +556,11 @@ class GameEngine:
             elif state.phase == Phase.ENGINE:
                 self._do_engine_phase()
 
-                # Check for game over
+                # Check for game over: Market Crash or turn limit
                 if state.market_crash_drawn and state.finish_round:
+                    self._end_game()
+                    return
+                if state.turn_number >= MAX_TURNS:
                     self._end_game()
                     return
 

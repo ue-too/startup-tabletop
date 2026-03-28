@@ -38,7 +38,7 @@ class SelfPlayEnv(gym.Env):
         num_players: int = 2,
         seed: int | None = None,
         reward_mode: str = "shaped",
-        max_steps: int = 5000,
+        max_steps: int = 3000,
     ) -> None:
         super().__init__()
         self.num_players = num_players

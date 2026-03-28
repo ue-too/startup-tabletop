@@ -698,7 +698,10 @@ Cards marked **"Senior"** (Developers) represent hired experts.
 
 ---
 ## 12. SCORING
-**Trigger:** Market Crash Card drawn.
+**Trigger:** Market Crash Card drawn **OR** Turn Limit reached.
+* **Market Crash:** Finish the current round, then calculate Final Valuation.
+* **Turn Limit (30 Turns):** If 30 complete rounds have been played without the Market Crash card being drawn, the game ends immediately after the current round. Calculate Final Valuation as normal. *(This represents regulatory pressure forcing all startups to demonstrate value.)*
+
 **Valuation Formula:**
 1.  **Product Portfolio:** Active Maint Products (+Hype/-Scandal + Integration).
 2.  **Cash:** $1 VP per $5.
