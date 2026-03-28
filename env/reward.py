@@ -33,20 +33,27 @@ def sparse_reward(state: GameState, player_id: int) -> float:
 
 
 def shaped_reward(state: GameState, player_id: int, prev_valuation: float) -> tuple[float, float]:
-    """Shaped reward: delta in estimated valuation + game-end bonus.
+    """Shaped reward: delta in estimated valuation + time pressure + game-end bonus.
 
     Returns (reward, current_valuation) so caller can track prev_valuation.
+
+    Components:
+    - Delta valuation: reward for increasing VP estimate
+    - Time pressure: small negative per step to discourage stalling
+    - Game-end: +1/-1 for win/loss
     """
     curr_val = estimate_valuation(state, player_id)
 
     if state.game_over:
-        # Add sparse component at game end
         end_reward = sparse_reward(state, player_id)
         delta = (curr_val - prev_valuation) / 100.0
         return delta + end_reward, curr_val
     else:
         delta = (curr_val - prev_valuation) / 100.0
-        return delta, curr_val
+        # Time pressure: small negative per step to discourage passing/stalling
+        # -0.001 per step means ~-0.3 over a 300-step game (small but consistent)
+        time_penalty = -0.001
+        return delta + time_penalty, curr_val
 
 
 def estimate_valuation(state: GameState, player_id: int) -> float:
