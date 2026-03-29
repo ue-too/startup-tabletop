@@ -35,6 +35,7 @@ def train(
     seed_model: str | None = None,
     learning_rate: float = 3e-4,
     threads: int = 4,
+    num_envs: int = 1,
     verbose: int = 1,
 ) -> str:
     torch.set_num_threads(threads)
@@ -109,6 +110,8 @@ def main():
                         help="Path to model to seed training from")
     parser.add_argument("--lr", type=float, default=3e-4)
     parser.add_argument("--threads", type=int, default=4)
+    parser.add_argument("--num-envs", "-n", type=int, default=1,
+                        help="Number of parallel environments (4-16 recommended)")
     args = parser.parse_args()
 
     train(
@@ -119,6 +122,7 @@ def main():
         seed_model=args.seed_model,
         learning_rate=args.lr,
         threads=args.threads,
+        num_envs=args.num_envs,
     )
 
 
